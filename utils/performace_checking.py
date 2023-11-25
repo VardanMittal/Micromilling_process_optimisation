@@ -7,8 +7,7 @@ def display_scores(scores):
     print("Mean:", scores.mean())
     print("Standard deviation:", scores.std())
 
-def Performance_testing(model, X, y):
-    scores = cross_val_score(model, X, y, scoring="neg_mean_squared_error", cv=10)
-    
+def Performance_testing(model, X, y, cv):
+    scores = cross_val_score(model, X, y, scoring="neg_mean_squared_error", cv=cv)
     rmse_scores = np.sqrt(-scores)
     display_scores(rmse_scores)
