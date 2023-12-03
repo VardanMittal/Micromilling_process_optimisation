@@ -129,6 +129,7 @@ env.bak/
 venv.bak/
 
 credentials/
+utils/data_fetch.py
 # Spyder project settings
 .spyderproject
 .spyproject
