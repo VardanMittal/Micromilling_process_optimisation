@@ -10,3 +10,5 @@ oauth2client
 python-dotenv
 joblib
 graphviz
+keras_tuner
+tensorboard-plugin-profile
