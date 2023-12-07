@@ -12,3 +12,4 @@ joblib
 graphviz
 keras_tuner
 tensorboard-plugin-profile
+pydot
