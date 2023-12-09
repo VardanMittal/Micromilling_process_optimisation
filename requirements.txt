@@ -13,3 +13,4 @@ graphviz
 keras_tuner
 tensorboard-plugin-profile
 pydot
+ann_visualizer
