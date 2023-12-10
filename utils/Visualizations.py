@@ -40,15 +40,16 @@ def plot_3d_contour(data, x_attr, y_attr, z_attr):
     fig = plt.figure(figsize=(8, 6))
     ax = fig.add_subplot(111, projection='3d')
 
-    x = data[x_attr]
-    y = data[y_attr]
-    z = data[z_attr]
+    x = data[x_attr].values
+    y = data[y_attr].values
+    z = data[z_attr].values
 
-    ax.plot_trisurf(x, y, z, cmap='Greys', edgecolor='none')
+    # Create a 3D contour plot using plot_trisurf
+    ax.plot_trisurf(x, y, z, cmap='viridis', edgecolor='none')
 
     ax.set_xlabel(x_attr)
     ax.set_ylabel(y_attr)
     ax.set_zlabel(z_attr)
+    plt.title(f"Continuous 3D Contour Plot of {x_attr}, {y_attr}, {z_attr}")
 
-    plt.title(f"3D Contour Plot of {x_attr}, {y_attr}, {z_attr}")
     plt.show()
